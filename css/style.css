@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* ---------- 1. General Styling ---------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    color: #000;
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.tab,
+.pc {
+    display: none;
+}
+
+/* ---------- 2. Container Layout ---------- */
+
+/* ---------- 3. Header ---------- */
+
+/* ---------- 4. Global Navigation ---------- */
+
+/* ---------- 5. Main Contents ---------- */
+
+/* ********** 5-1. Contents General-Styling ********** */
+
+/* ********** 5-2. Contents Indivisual-Styling ********** */
+
+/* ---------- 6. Sideber ---------- */
+
+/* ---------- 7. Footer ---------- */
+
+/* ---------- 8. Responsive Styling ---------- */
+
+/* ********** 8-1. Responsive for Tablet ********** */
+
+@media screen and (min-width: 768px) {
+    /* 8-1-1. General Styling */
+    body {
+        font-size: 16px;
+    }
+    .tab {
+        display: contents;
+    }
+    /* 8-1-2. Layout */
+}
+
+/* ********** 8-2. Responsive for PC ********** */
+
+@media screen and (min-width: 1024px) {
+    /* 8-2-1. General Styling */
+    .pc {
+        display: contents;
+    }
+    /* 8-2-2. Layout */
+    #container {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* ---------- (DD/MM/YYYY) Extra Styling ---------- */
